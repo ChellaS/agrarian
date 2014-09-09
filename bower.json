@@ -1,0 +1,36 @@
+{
+  "name": "Agrarian",
+  "version": "v0.0.1",
+  "description": "Agrarian Studies",
+  "main": "index.html",
+  "keywords": [
+    "ras"
+  ],
+  "authors": [
+    "Chella S"
+  ],
+  "license": "GIT",
+  "homepage": "ras",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "minified": "~2014.1.0",
+    "namespace": "~0.5.3",
+    "d3": "~3.4.11",
+    "grunt-contrib-watch": "~0.6.1",
+    "coffeescript": "~1.8.0",
+    "bootstrap-sass-official": "~3.2.0+2",
+    "Buttons": "*",
+    "blade": "~3.2.7",
+    "q": "~2.0.2",
+    "radio": "~0.2.0",
+    "loglevel": "~1.1.0",
+    "jsclass": "~4.0.5"
+  }
+}
