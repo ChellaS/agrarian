@@ -1,0 +1,15 @@
+%form{:action => "#"}
+    #username-field
+        %label{:for => "Username"} E-Mail ID
+        %input{:type => "email", :id => "Username", :name => "username", :required => "", :pattern => "\/\^\[a\-zA\-Z0\-9\.\!\#\$\%\&\'\*\+\/\=\?\^\_\`\{\|\}\~\-\]\+\@\[a\-zA\-Z0\-9\-\]\+\(\?\:\.\[a\-zA\-Z0\-9\-\]\+\)\*\$\/"}/
+    #password-field
+        %label{:for => "password"} Password
+        %input{:type => "password", :id => "password"}/
+    #remember-me-field
+        %input{:type => "checkbox", :id => "remember-me"}/
+        %label{:for => "remember-me"} Remember Me
+    #submit-field
+        %a{:href => "#registeration"} Register Now 
+        |
+        %a{:href => "#forgot"} Forgot Password
+        %input{:type => "submit", :value => "GO"}/

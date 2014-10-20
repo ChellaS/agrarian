@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+%html{:lang => "en", :"ng-app" => "agrarian"}
+    %head
+        %meta{:charset => "UTF-8"}/
+        %title Agrarian Studies
+        %link{:rel => "stylesheet", :href => "vendor/components/bootstrap-css/css/bootstrap.css"}/
+        %link{:rel => "stylesheet", :href => "app/Tnq/public/Css/home.css"}/
+    %body
+        %article.col-md-12
+            %header
+                %figure
+                    %img{:src => "", :alt => "Agrarian Studies"}/
+                %figure
+                    %img{:src => "", :alt => "RAS"}/
+                %nav#menu
+                    %ul
+                        %li 
+                            %a{:href => "#"} Home
+                        %li 
+                            %a{:href => "#"} About Us
+                        %li 
+                            %a{:href => "#"} Author Guidelines
+                        %li 
+                            %a{:href => "#"} Archive
+                        %li 
+                            %a{:href => "#"} Subscription
+                        %li 
+                            %a{:href => "#"} Links
+                        %li 
+                            %a{:href => "#"} Glossary
+                        %li 
+                            %a{:href => "#"} Contact
+                        %li 
+                            %a{:href => "#"} RSS
+                %nav
+                    #status-bar
+                        %span {ras_status}
+            #seperator.col-md-12
+            #leftpanel.col-md-3
+                #login-page{:"ng-include" => "login.html"}
+                #form-seperator.col-md-3
+                #article-submission.col-md-3
+                    %input{:type => "submit", :value => "Submit Article"}/
+                #form-seperator.col-md-3
+                #search-field.col-md-3
+                    %form
+                        %input{:list => "browse", :id => "browse"}/
+                        %datalist{:id => "browse"}
+                            %option{:value => "v1. No1"}
+                            %option{:value => "v1. No2"}
+                            %option{:value => "v1. No3"}
+                        %input{:type => "submit", :value => "Browse"}/
+                        %input{:type => "search", :id => "search"}/
+                #form-seperator.col-md-3
+                    %form
+                        %input{:list => "browse", :id => "browse"}/
+                        %datalist{:id => "browse"}
+                            %option{:value => "v1. No1"}
+                            %option{:value => "v1. No2"}
+                            %option{:value => "v1. No3"}
+                        %input{:type => "submit", :value => "Search"}/
+            %main.col-md-7
+            #rightpanel.col-md-2
+                %figure
+                    %img{:src => "", :alt => "Cover Image 1"}/
+                %figure
+                    %img{:src => "", :alt => "Cover Image 2"}/
+            #seperator.col-md-12
+            %footer.col-md-12
+                %nav
+                    %ul
+                        %li Terms and Conditions
+                        %li Privacy Policy
+                        %li Home
+                        %li About
+                        %li FAQ
+                        %li.no-border Site Map
+        %script JSCLASS_PATH = 'vendor/components/jsclass/min'
+        %script(type="text/javascript"
+        src="vendor/components/jsclass/min/loader-browser.js")
+        %script(type="text/javascript"
+        src="vendor/components/namespacejs/Namespace.js")
+        %script(type="text/javascript" src="vendor/components/angularjs/angular.min.js")
